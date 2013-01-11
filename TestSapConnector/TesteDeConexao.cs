@@ -12,7 +12,9 @@ namespace TestSapConnector
         [ExpectedException(typeof (RfcLogonException))]
         public void NaoConsigoConectarNoSapComCredenciaisInvalidas()
         {
+            //Obtém os parâmetros de conexão
             RfcConfigParameters configParameters = TestSapConnectorUtils.GetDefaultConfigParameters("FusionBsBiosInvalida");
+            //Seta uma senha inválida para a conexão.
             configParameters.Add(RfcConfigParameters.Password, "inicial1");
 
             var sapConnector = new SapConnector(configParameters);
