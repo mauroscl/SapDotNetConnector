@@ -16,7 +16,6 @@ namespace TestSapConnector
                 {
                     {RfcConfigParameters.Name, configurationName},
                     {RfcConfigParameters.User, "fusion_wylly"},
-                    /*{RfcConfigParameters.Password, "inicial"},*/
                     {RfcConfigParameters.Client, "100"},
                     {RfcConfigParameters.Language, "EN"},
                     {RfcConfigParameters.AppServerHost, "10.1.3.24"},
@@ -29,7 +28,7 @@ namespace TestSapConnector
         public static SapConnector GetDefaultSapConnection()
         {
             RfcConfigParameters parameters = GetDefaultConfigParameters("FusionBsBiosDefault");
-            parameters.Add(RfcConfigParameters.Password, "inicial");
+            parameters.Add(RfcConfigParameters.Password, "xxxx"); //colocar a senha
             return new SapConnector(parameters);
         }
     }
