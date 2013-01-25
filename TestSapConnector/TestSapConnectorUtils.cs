@@ -20,8 +20,7 @@ namespace TestSapConnector
                     {RfcConfigParameters.Language, "EN"},
                     {RfcConfigParameters.AppServerHost, "10.1.3.24"},
                     {RfcConfigParameters.SystemNumber, "0"},
-                    {RfcConfigParameters.SystemID, "ECD"}/*,
-                    {RfcConfigParameters.SAPRouter, "/H/200.102.153.17/W/123456/H/"}*/
+                    {RfcConfigParameters.SystemID, "ECD"}
                 };
         }
 
