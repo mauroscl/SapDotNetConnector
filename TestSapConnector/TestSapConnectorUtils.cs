@@ -23,7 +23,11 @@ namespace TestSapConnector
                     {RfcConfigParameters.SystemID, "ECD"}
                 };
         }
-
+        /// <summary>
+        /// Obtém a conexão padrão para o SAP
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public static SapConnector GetDefaultSapConnection()
         {
             RfcConfigParameters parameters = GetDefaultConfigParameters("FusionBsBiosDefault");
