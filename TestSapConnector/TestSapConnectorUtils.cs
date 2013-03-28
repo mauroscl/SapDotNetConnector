@@ -25,7 +25,7 @@ namespace TestSapConnector
         }
         /// <summary>
         /// Obtém a conexão padrão para o SAP
-        /// 
+        /// altração começada na branch QAS
         /// </summary>
         /// <returns></returns>
         public static SapConnector GetDefaultSapConnection()
